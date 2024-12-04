@@ -11,4 +11,6 @@ print ("=========================")
 print ("WELCOME TO CHASE")
 print ("=========================")
 time.sleep(2)
-print ("timer over")
+print (Q1)
+if input == (A1):
+    print ("correct")        
