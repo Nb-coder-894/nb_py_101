@@ -17,7 +17,7 @@ elif input != answer:
     tries =-1
     print("Incorrect.")
 if tries == 0:
-    print(end)        
+    print("end")        
 
 
 
