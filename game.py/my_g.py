@@ -6,16 +6,17 @@ import time
 # ask user for number
 # if number is correct, say correct and end
 # if the number incorrect, give more try. If 5 tryies done then say lose. 
-answer = random.randint(1,10)
-tries = 5
+answer_s = random.randint(1,10)
 print ("Guessing game.")
 time.sleep(1)
-print ("What is the number")
-if input == answer:
+tries = 5
+while tries > 0:
+    print("What is the number?")
+    time.sleep(15)
+if input == answer_s:
     print("correct. You win!! Congratulations!")
-elif input != answer:
-    tries =-1
-    print("Incorrect.")
+elif input != answer_s:
+    print("Incorrect")    
 if tries == 0:
     print("end")        
 
