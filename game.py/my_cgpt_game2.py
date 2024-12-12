@@ -1,12 +1,16 @@
 import random
 import time
 print("Would you like hard or easy?")
+the_response = input
 if input == "hard":
-    answer_s = random.randint(1,10)
+    answer_s = random.randint(1,552),
+tries = 1
+
 # Choose a number 1-10 and save it as a variable
-elif input == "easy":
+if input == "easy":
 
     answer_s = random.randint(1, 10)
+time.sleep(2)    
 
 # Print the game name
 print("Guessing game.")
