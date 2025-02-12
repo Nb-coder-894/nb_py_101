@@ -4,5 +4,4 @@ amazon_dict = {
     "toys" : "999" ,
     "videogames" : "999999999999"
 }
-
-amazon_dict += {input : input}
+print (amazon_dict)
