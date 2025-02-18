@@ -7,12 +7,10 @@ if yOrN == "y":
     amazon_dict[item_name] = None
     item_quantity = input("what is the quantity of the item \n")
     amazon_dict[item_name] = item_quantity
+print(f"change dict ->> {amazon_dict.items()}")
+# extension, make sure that if the item is already in the dict then change the value    
 if item_name in amazon_dict:
  same_name_response = input("Okay this item is  already in Amazon. \n Would you like to change the quantity of the item? \n Type y for the quantity to update, type n for the quantity to stay the same. \n")    
 if same_name_response == "y":
     print(f"change dict ->> {amazon_dict.items()}")    
-# extension, make sure that if the item is already in the dict then change the value
-    
-        
-    
-                                                                                                                 
+# extension, make sure that if the item is already in the dict then change the value                             
