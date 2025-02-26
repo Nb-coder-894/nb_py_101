@@ -4,4 +4,3 @@ def calculation(number) :
             if not i==0 and number%i==0:
                 print(i)
 answer = calculation(number)
-
