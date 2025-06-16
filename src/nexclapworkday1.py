@@ -19,18 +19,36 @@
 # # """
 # Set 7 act 5:
 # make user input 5 decimal values. Put this in a list called values. Loop through the list and put how many of the numbers are between 10 and 100/
-# 
-#
-#
-#
-print ("running s7a5")
-values = []
-numcount = 0
-for i in range (1,6,1):
-    values.append(float(input("Please give a number as a decimal.\n")))
-for i in range (1,6,1):
-    if values >= 90:
-        numcount += 1
-print(f"Your numcount is {numcount}.\n")
-
-    
+# print ("running s7a5")
+# values = []
+# numcount = 0
+# for i in range (1,6,1):
+#     values.append(float(input("Please give a number as a decimal.\n")))
+# for i in range (0 ,len(values),1):
+#     if values[i] >= 90 and values[i] <= 110:
+#         numcount += 1
+# print(f"Your numcount is {numcount}.\n")
+# Notes about this:
+# the reason that there is a values[i] thing there is because it has to loop through the list, and len(values) because that is the length of the list values, so that the for loop is as efficient as possible.
+# Set 7 act 6
+#Ask the user to input 5 decimal values. Add them to a list called vals. print the total sum of all of the elements in the list.
+# print("Now running s7a6")
+# vals = []
+# for i in range (0,5,1):
+#     vals.append(float(input("Please give a decimal.\n")))
+#     summation = vals[i]+vals[i]+vals[i]+vals[i]+vals[i]
+# print(summation)    
+#Set 7 act 7
+# samething as last time, but now multiply all of the terms.
+# vals = []
+# for i in range (0,5,1):
+#     vals.append(float(input("Please give a decimal.\n")))
+#     product = vals[i]*vals[i]*vals[i]*vals[i]*vals[i]
+# print(product)
+#Set 7 act 8
+# Now, ask for 5 decimal values. Add them to a list called vals. If one of the numbers in the list is 10 AND the numbers in the list sum to 10, print that "10 is present in this list". Otherwise, print "10 is not present in this list."
+print("Now running s7a8")
+vals = []
+for i in range (0,5,1):
+    vals.append(float(input("Please give a decimal.")))
+    if vals[i]+vals[i]+vals[i]+vals[i]+vals[i] == 10 and vals[i] == 10:
