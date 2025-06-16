@@ -23,15 +23,14 @@
 #
 #
 #
-import time
-value_count = 0
+print ("running s7a5")
 values = []
-print("Now running Set 7 act 5.")
-time.sleep(1)
-for i in range (1,6):
-    values = float(input("Please give a decimal number."))
-    if values > 10 and values < 100:
-        value_count += 1
-        values.append()
-        
-print(f"your valuecount is {values}")    
+numcount = 0
+for i in range (1,6,1):
+    values.append(float(input("Please give a number as a decimal.\n")))
+for i in range (1,6,1):
+    if values >= 90:
+        numcount += 1
+print(f"Your numcount is {numcount}.\n")
+
+    
