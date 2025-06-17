@@ -77,8 +77,37 @@
 #     print("10 is not present in this sequence.")
 # Set 7 act 10
 # ask for 5 decimals. If the first and last terms of the decimal inputs are equal to each other, then print that the first and last terms are equal. Otherwise, print that they are not equal.
-print("Now running s7a10")
-vals = []
+# print("Now running s7a10")
+# vals = []
+# for i in range (0,5,1):
+#     vals.append(float(input("Please give a decimal.\n")))
+# if vals[0] == vals[4]:
+#     print("The first and last terms are equal to each other.")
+# else:
+#     print("The first and last terms are not equal to each other.")  
+# Set 7 act 11
+# Get 5 decimals, add them to a list called values, then check if they are within 10 of 100 OR 200. Pretty simple compared to the past few activities.
+# print("Now running s7a11")
+# values = []
+# correct = 0
+# for i in range (0,5,1):
+#     values.append(float(input("Please give a decimal. \n")))
+# for i in range (0, len(values),1):
+#     if values[i] <= 110 and values[i] >= 90:
+#         correct += 1
+#     elif values[i] <= 210 and values[i] >= 190:
+#         correct += 1
+# print(f"You have {correct} correct numbers.")  
+# Set 7 act 12
+# Get 5 decimal values, add them to a list called "values". However, add all of the terms into a list called "reversed", which has all of the same values but reversed.
+print("Now running s7a12")
+values = []
+reversed = []
 for i in range (0,5,1):
-    vals.append(float(input("Please give a decimal.")))
-if                     
+    values.append(float(input("Please give a decimal.\n")))
+ 
+    
+
+           
+ 
+
