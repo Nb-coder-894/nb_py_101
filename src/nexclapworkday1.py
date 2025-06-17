@@ -108,18 +108,31 @@
 # print(reversed)
 #set 7 act 13
 #Sum up all 5 decimals, then check if the sum is less than or greater than 50, and print that.
-print("Now running s7a13")
-values = []
-for i in range (0,5,1):
-    values.append(float(input("Please give a decimal.\n")))
-if values[i].sum() >= 50:
-    print ("The sum of the decimals is greater than 50.")
-elif values[i].sum() <= 50:
-    print("The sum of the decimals is less than 50.")
-else:
-    print("Yeah... it's probably equal to 50.")        
-
-
-           
- 
-
+# print("Now running s7a13")
+# values = []
+# for i in range (0,5,1):
+#     values.append(float(input("Please give a decimal.\n")))
+# if sum(values) >= 50:
+#     print ("The sum of the decimals is greater than 50.")
+# elif sum(values) <= 50:
+#     print("The sum of the decimals is less than 50.")
+# else:
+#     print("Yeah... it's probably equal to 50.")
+# Set 7 act 14 (The final challenge)
+#  All it does is ask you how much you got on a test out of 80 and then uses the information to tell you the percentage you would need to get the next grade up.
+# print("Now running s7a14")
+# score = float(input("Now, out of 80, how much did you get? Please only put the one number, the out of 80 part is already known.\n"))
+# score = score/80 * 100
+# if score >= 90:
+#     print(f"Congrats! You got an A. \n That is the best score you could have gotten, apart from a perfect 100%.\n  Your percentage was {score}%.")
+# elif score >= 80 and score <= 89.9:
+#     dif = 90 - score
+#     pointdif = (dif/100)
+#     print(f"You got a B.\n To get the next highest score, which is an A, \n you would need {dif} more percent...\n Which is {pointdif} more points. ")
+# elif score>= 70 and score <= 79.9:
+#     dif = 80-score
+#     pointdif = (dif/100) *80
+#     print(f"You got a C.\n In order to get the next highest score, which is a B, \n you would need {dif} more percent...\n Which is {pointdif} more points.")
+# else:
+#     print("You are a failure. \n How could you score this low. \nIf your parents are Indian or Asian, don't even think about going back home.")                    
+#All 14 complete.
