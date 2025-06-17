@@ -25,6 +25,7 @@ while True:
                 move_direction = move_direction.lower()
                 if move_direction == "b" and x_position == 0:
                     print("You can't do that")
-                elif move_direction == "f"    
+                elif move_direction == "f":
+                    print("work in progress")    
 
    
