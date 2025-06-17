@@ -52,3 +52,6 @@ vals = []
 for i in range (0,5,1):
     vals.append(float(input("Please give a decimal.")))
     if vals[i]+vals[i]+vals[i]+vals[i]+vals[i] == 10 and vals[i] == 10:
+        print("10 is present in this series.")
+    else:
+        print("10 is not present in this series.")    
