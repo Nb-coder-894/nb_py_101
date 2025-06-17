@@ -61,4 +61,24 @@
 #      print("10 is present in this sequence.")
 # else:
 #     print("10 is not present in this sequence.")          
-#f
+#Set 7 act 9
+#samething as last time, only that there is an "or" statement instead of an "and statement".
+# print("Now running s7a9")
+# vals = []
+# for i in range (0,5,1):
+#     vals.append(float(input("Please give a decimal.\n")))
+# hasTen = False
+# for z in range (0, len(vals),1):
+#     if vals[z] == 10:
+#         hasTen = True
+# if hasTen or sum(vals) == 10:
+#     print("10 is present in this sequence.")
+# else:
+#     print("10 is not present in this sequence.")
+# Set 7 act 10
+# ask for 5 decimals. If the first and last terms of the decimal inputs are equal to each other, then print that the first and last terms are equal. Otherwise, print that they are not equal.
+print("Now running s7a10")
+vals = []
+for i in range (0,5,1):
+    vals.append(float(input("Please give a decimal.")))
+if                     
