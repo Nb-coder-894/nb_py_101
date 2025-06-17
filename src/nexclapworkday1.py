@@ -105,6 +105,7 @@ values = []
 reversed = []
 for i in range (0,5,1):
     values.append(float(input("Please give a decimal.\n")))
+
  
     
 
