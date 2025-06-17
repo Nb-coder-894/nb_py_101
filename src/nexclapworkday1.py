@@ -47,11 +47,18 @@
 # print(product)
 #Set 7 act 8
 # Now, ask for 5 decimal values. Add them to a list called vals. If one of the numbers in the list is 10 AND the numbers in the list sum to 10, print that "10 is present in this list". Otherwise, print "10 is not present in this list."
-print("Now running s7a8")
-vals = []
-for i in range (0,5,1):
-    vals.append(float(input("Please give a decimal.")))
-    if vals[i]+vals[i]+vals[i]+vals[i]+vals[i] == 10 and vals[i] == 10:
-        print("10 is present in this series.")
-    else:
-        print("10 is not present in this series.")    
+# print("Now running s7a8")
+# vals = []
+# for i in range (0,5,1):
+#     vals.append(float(input("Please give a decimal.\n")))
+
+# isTen = False
+
+# for x in range(0, len(vals), 1):
+#      if vals[x] == 10:
+#         isTen = True
+# if isTen and sum(vals) == 10:
+#      print("10 is present in this sequence.")
+# else:
+#     print("10 is not present in this sequence.")          
+#f
