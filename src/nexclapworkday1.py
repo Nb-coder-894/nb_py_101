@@ -100,14 +100,25 @@
 # print(f"You have {correct} correct numbers.")  
 # Set 7 act 12
 # Get 5 decimal values, add them to a list called "values". However, add all of the terms into a list called "reversed", which has all of the same values but reversed.
-print("Now running s7a12")
+# print("Now running s7a12")
+# values = []
+# for i in range (0,5,1):
+#     values.append(float(input("Please give a decimal.\n")))
+# reversed = values[::-1]
+# print(reversed)
+#set 7 act 13
+#Sum up all 5 decimals, then check if the sum is less than or greater than 50, and print that.
+print("Now running s7a13")
 values = []
-reversed = []
 for i in range (0,5,1):
     values.append(float(input("Please give a decimal.\n")))
+if values[i].sum() >= 50:
+    print ("The sum of the decimals is greater than 50.")
+elif values[i].sum() <= 50:
+    print("The sum of the decimals is less than 50.")
+else:
+    print("Yeah... it's probably equal to 50.")        
 
- 
-    
 
            
  
