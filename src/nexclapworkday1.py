@@ -119,18 +119,20 @@
 # else:
 #     print("Yeah... it's probably equal to 50.")
 # Set 7 act 14 (The final challenge)
-# Easy as pie. All it does is ask you how much you got on a test out of 80 and then uses the information to tell you the percentage you would need to get the next grade up.
-print("Now running s7a14")
-score = float(input("Now, out of 80, how much did you get? Please only put the one number, the out of 80 part is already known."))
-score = score/80 * 100
-if score >= 90:
-    print(f"Congrats! You got an A. \n That is the best score you could have gotten, apart from a perfect 100%.\n  Your percentage was {score}%.")
-if score >= 80 and score <= 89.9:
-    dif = 90 - score
-    pointdif = (dif/100)
-    print(f"You got a B.\n To get the next highest score, which is an A, \n you would need {dif} more percent...\n Which is ")            
-
-
-           
- 
-
+#  All it does is ask you how much you got on a test out of 80 and then uses the information to tell you the percentage you would need to get the next grade up.
+# print("Now running s7a14")
+# score = float(input("Now, out of 80, how much did you get? Please only put the one number, the out of 80 part is already known.\n"))
+# score = score/80 * 100
+# if score >= 90:
+#     print(f"Congrats! You got an A. \n That is the best score you could have gotten, apart from a perfect 100%.\n  Your percentage was {score}%.")
+# elif score >= 80 and score <= 89.9:
+#     dif = 90 - score
+#     pointdif = (dif/100)
+#     print(f"You got a B.\n To get the next highest score, which is an A, \n you would need {dif} more percent...\n Which is {pointdif} more points. ")
+# elif score>= 70 and score <= 79.9:
+#     dif = 80-score
+#     pointdif = (dif/100) *80
+#     print(f"You got a C.\n In order to get the next highest score, which is a B, \n you would need {dif} more percent...\n Which is {pointdif} more points.")
+# else:
+#     print("You are a failure. \n How could you score this low. \nIf your parents are Indian or Asian, don't even think about going back home.")                    
+#All 14 complete.
