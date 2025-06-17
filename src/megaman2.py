@@ -25,6 +25,10 @@ while True:
                 move_direction = move_direction.lower()
                 if move_direction == "b" and x_position == 0:
                     print("You can't do that")
-                elif move_direction == "f"    
+                    time.sleep(1)
+                elif move_direction == "f":
+                    x_position += 1
+                    print("Okay. You moved forward.\n However, you were on a conveyor belt")    
+                   
 
    
