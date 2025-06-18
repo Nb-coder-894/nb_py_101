@@ -40,7 +40,40 @@ from random import randint
 
 word = "Three"
 
+randomVal = randint(0,2)
 
+x= word[randomVal]
+
+print(x)
+
+#This will result in the code giving a sandom letter, based on the randfint function.
+
+#4: Adding a character to an existing string.
+# This wil prbably use slicing to add letters to a string.
+
+x = "dinosaur"
+
+x = x + "s"
+
+print(x)
+
+#Output: dinosaurs
+
+y = "h"
+
+for x in range(0,10,1):
+    y = y + "h"
+print(y)
+#Output: hhhhhhhhhhhhhhhh 
+
+#Set 1 Exercise:
+# Converting DNA to RNA to Amino Acid conversion
+#Requirements:
+# Ask the user to input the length of a DNA sequence.
+# THe possible characters for the DNA seqence are ATCG.
+# Make sure it is random THough.
+# So, it has to be a random seqence of those four letters for the given length from the user.
+#Optional: using RNA, convert into amino acids.
 
 
 
