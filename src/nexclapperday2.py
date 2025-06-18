@@ -74,43 +74,19 @@ print(y)
 # Make sure it is random THough.
 # So, it has to be a random seqence of those four letters for the given length from the user.
 #Optional: using RNA, convert into amino acids.
+#Notes: A in Dna becomes U in Rna
+# T in DNA becomes A in RNA
+C in DNA becomes G n RNA
+G in DNA becomes C in RNA
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+So, I'll make a list and use splicing to make it.
 """
+from random import randint
+Dna_Length = int(input("Please give the number of DNA sequence. \n"))
+DNA = "ATCG"
+for i in range (0, len(Dna_Length), 1):
+    
+    RandomVal = randint(0,Dna_Length)
+    x = DNA[RandomVal]
+print(x)    
+     
