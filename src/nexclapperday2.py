@@ -89,4 +89,81 @@ for i in range (0, len(Dna_Length), 1):
     RandomVal = randint(0,Dna_Length)
     x = DNA[RandomVal]
 print(x)    
-     
+"""
+# Finding average value of a list:
+# To find the average (arithmetic mean) of a list, do the following code:
+numbers = [1,2,3,4]
+x = sum(numbers)
+
+#Finding the length of a list using the len function
+
+y = len(numbers)
+
+#result
+
+print(x/y)
+
+# This concludes how to find the average of a list.
+
+# How to print all of the numbers divisible by 4 between 1-100.
+# You would use the modulus operator in order to find this, as shown:
+
+#Firstly, remember that is I do 10 % 2, the answer is 0 (not 5), because 10 is divisible by 2 evenly and thus has no remainder. As this is a recap from what I already know, I will not mention more about it.
+#Here's the code to do that:
+
+#Use a for loop and modulus
+
+for i in range (1,101,1):
+    if x % 4 == 0:
+        print(x)
+
+# Pretty simple code.
+#         
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""     
