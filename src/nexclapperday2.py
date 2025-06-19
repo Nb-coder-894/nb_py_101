@@ -131,7 +131,15 @@ for i in range (3,1000,3):
     print(i)
 s2a2
 create a for loop from 30 to 350 printing every even number.
-"""     
 print("Now running s2a2")
-for i in range (30,350,2):
+for i in range (28,352,2):
     print(i)
+s2a3
+create a for loop from 200 to -200 printing multiples of 3.
+print("Now running s2a3")
+for i in range (-200,200):
+    if i % 3 == 0:
+        print(i)
+s2a4
+create a for loop from 1 to 1,000, printing only the multiples of 7.        
+"""     
