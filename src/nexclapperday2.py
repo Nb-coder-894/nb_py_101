@@ -80,7 +80,6 @@ C in DNA becomes G n RNA
 G in DNA becomes C in RNA
 
 So, I'll make a list and use splicing to make it.
-"""
 from random import randint
 Dna_Length = int(input("Please give the number of DNA sequence. \n"))
 DNA = "ATCG"
@@ -96,8 +95,7 @@ for i in range (0,Dna_Length):
     else:
         RNAval = "U"
     print("Your RNA value is:\n")
-    print(RNAval)                   
-"""
+    print(RNAval) 
 # Finding average value of a list:
 # To find the average (arithmetic mean) of a list, do the following code:
 numbers = [1,2,3,4]
