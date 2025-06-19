@@ -81,14 +81,14 @@ G in DNA becomes C in RNA
 
 So, I'll make a list and use splicing to make it.
 """
-from random import randint
-Dna_Length = int(input("Please give the number of DNA sequence. \n"))
-DNA = "ATCG"
-for i in range (0, len(Dna_Length), 1):
+# from random import randint
+# Dna_Length = int(input("Please give the number of DNA sequence. \n"))
+# DNA = "ATCG"
+# for i in range (0, len(Dna_Length), 1):
     
-    RandomVal = randint(0,Dna_Length)
-    x = DNA[RandomVal]
-print(x)    
+#     RandomVal = randint(0,Dna_Length)
+#     x = DNA[RandomVal]
+# print(x)    
 """
 # Finding average value of a list:
 # To find the average (arithmetic mean) of a list, do the following code:
@@ -118,52 +118,9 @@ for i in range (1,101,1):
         print(x)
 
 # Pretty simple code.
-#         
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Next task: Set 2 exercises:
+# s2a1: create a for loop from 1 to 1,000, printing every 3rd number.
 """     
+print("Now running s2a1")
+for i in range (3,1000,3):
+    print(i)
