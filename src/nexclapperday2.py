@@ -141,5 +141,11 @@ for i in range (-200,200):
     if i % 3 == 0:
         print(i)
 s2a4
-create a for loop from 1 to 1,000, printing only the multiples of 7.        
+create a for loop from 1 to 1,000, printing only the multiples of 7.  
+print("Now running s2a4")
+for i in range (1,1000):
+    if i % 7 == 0:
+        print(i)
+s2a5
+create a program that will ask your score out of 120 and then give you your percentage based on how well you did.         
 """     
