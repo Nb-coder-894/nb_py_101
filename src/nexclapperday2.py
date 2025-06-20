@@ -178,7 +178,28 @@ while True:
     end_request = end_request.lower()
     if end_request == "y":
         break
+s2a6
+Ask the user to input their favorite basketball team.
+Print out whether it is in the Eastern or Western Conference.
+You can use the sample lists below that have all of the team names already:
+Warriors- Western
+Lakers - Western
+Celtics - Eastern
+Cavaliers - Eastern
+eastern = ["Hawks", "Celtics", "Hornets", "Bulls", "Cavaliers", "Pistons", "Pacers", "Heat", "Bucks", "Nets", "Knicks", "Magic", "76ers", "Raptors", "Wizards"]
+western = ["Mavericks", "Nuggets", "Warriors", "Rockets", "Clippers", "Lakers", "Grizzlies", "Timberwolves", "Pelicans", "Thunder","Suns", "Trail Blazers", "Kings", "Spurs", "Jazz"]
+print("Now running s2a6")
+western = ["Mavericks", "Nuggets", "Warriors", "Rockets", "Clippers", "Lakers", "Grizzlies", "Timberwolves", "Pelicans", "Thunder","Suns", "Trail Blazers", "Kings", "Spurs", "Jazz"]
+eastern = ["Hawks", "Celtics", "Hornets", "Bulls", "Cavaliers", "Pistons", "Pacers", "Heat", "Bucks", "Nets", "Knicks", "Magic", "76ers", "Raptors", "Wizards"]
+team = input("Input ur team name \n")
+if team == western:
+    print(f"Your team is in the western conference.")
+else:
+    print(f"Your team is in the eastern conference.")   
+s2a7
 
 """
+ 
+
 
 
