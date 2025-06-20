@@ -153,7 +153,6 @@ A is the 90% or above.
 B is 80% to 89.9%.
 C is 70% to 79.99%
 F is below 70%
-"""
 print("Now running s2a5")
 import time
 while True:
@@ -179,5 +178,7 @@ while True:
     end_request = end_request.lower()
     if end_request == "y":
         break
+
+"""
 
 
