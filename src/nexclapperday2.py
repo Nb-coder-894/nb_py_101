@@ -141,12 +141,43 @@ for i in range (-200,200):
     if i % 3 == 0:
         print(i)
 s2a4
-create a for loop from 1 to 1,000, printing only the multiples of 7.  
+#create a for loop from 1 to 1,000, printing only the multiples of 7.  
 print("Now running s2a4")
 for i in range (1,1000):
     if i % 7 == 0:
         print(i)
 s2a5
-create a program that will ask your score out of 120 and then give you your percentage based on how well you did.
-         
+#create a program that will ask your score out of 120 and then give you your percentage based on how well you did.
+#Here is the gradation scale: 
+A is the 90% or above.
+B is 80% to 89.9%.
+C is 70% to 79.99%
+F is below 70%
 """
+print("Now running s2a5")
+import time
+while True:
+    score = float(input("Out of 120, how much did you get? \nIf you got 'x' out of 120 then put that x value, such as 12 or 120.\n If you recieved a decimal score, such as 99.5 out of 120, this code will still take it. \n "))
+    score = (score/120)*100
+
+    if score >= 90:
+        print(f"Congrats! You got an A, which is the highest score that you could get. \n No improvement necessary!\n Your percentage was {score}%.")
+    elif score >= 80 and score <= 89.9:
+        dif = 90 - score
+        dif  = (dif * 120)/100
+        print(f"You got a B. \n To get the next highest score, you would need {dif} more percent. \n Your percentage was {score}%.")
+    elif score>=70 and score <= 79.99:
+        dif = 80 - score
+        dif = (dif*120)/100
+        print(f"You got a C.\n To get the next highest score, you would need {dif} more points. \n Your percentage was {score}%.")
+    else:
+        dif = 70 - score
+        dif = (dif*120)/100
+        print(f"You got an F. \n You have failed. \n To get the next highest score, which is a C, you would need {dif} more points.\n Your percentage was {score}%.")
+    time.sleep(1)
+    end_request = input("Would you like to leave the experience? type in y or n.")
+    end_request = end_request.lower()
+    if end_request == "y":
+        break
+
+
