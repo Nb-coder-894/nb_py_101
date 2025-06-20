@@ -212,9 +212,7 @@ s2a8
 Create a program that loops through the list and prints out all of the items greater than 25.    
 """
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-for a in range (0,len(a)):
-    if a > 25:
-        print(a)
+for 
 
 
 
