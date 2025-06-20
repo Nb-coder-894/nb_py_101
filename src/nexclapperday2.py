@@ -197,9 +197,24 @@ if team == western:
 else:
     print(f"Your team is in the eastern conference.")   
 s2a7
+Create a program which asks the user for 3 numbers
+representing the year, month and day e.g 1982 10 08 and then outputs in the form 8th
+October 1982.
+print("Now running s2a7")
+year = int(input("Enter the year.\n"))
+Months = ["January", "February", "March"," April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
+month = int(input("Enter the month.\n")) 
+month = Months[month-1]
+day = int(input("Enter the day.\n"))
+print(f"{day} {month} {year}")
+s2a8
+Create a program that loops through the list and prints out all of the items greater than 25.    
 """
- 
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+for a in range (0,len(a)):
+    if a > 25:
+        print(a)
 
 
 
