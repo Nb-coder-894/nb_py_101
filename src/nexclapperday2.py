@@ -147,5 +147,6 @@ for i in range (1,1000):
     if i % 7 == 0:
         print(i)
 s2a5
-create a program that will ask your score out of 120 and then give you your percentage based on how well you did.         
-"""     
+create a program that will ask your score out of 120 and then give you your percentage based on how well you did.
+         
+"""
