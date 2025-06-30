@@ -242,12 +242,14 @@ for i in data:
 #This renders the dict key into string form, similar to the int function.
 print("The value is" +  str(data[i]))
 The reason that value thingy works is because first of all, data[i] represents the value of the data for the iteration, and str just converts it back into a string, as it is currently in a dicitonary format. 
-
-"""
+to prove this, I will print out the string form of the data for a set key.
 data =  {"fruit": "orange", "vegetable" : "carrot", "beverage" : "apple juice"}
-for i in data:
-   print("The key is" + str(i))
-#This renders the dict key into string form, similar to the int function.
-print("The value is" +  str(data[i]))
+print(data["fruit"])
+the result is orange.
+This proves that not only can dictionaries be easily used as a password and inventory, they are literally like keys that unlock "doors" with their RESPECTIVE values hidden behing them.
+Many of the different and same "values" can be behind the same "door", and thus be opened by the same "key", but the values are all in the same chest, which requires that one key.
+This is a good metaphor on the usage of the dictionary.
+"""
+
 
 
