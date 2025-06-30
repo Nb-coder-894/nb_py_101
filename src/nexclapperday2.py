@@ -249,6 +249,14 @@ the result is orange.
 This proves that not only can dictionaries be easily used as a password and inventory, they are literally like keys that unlock "doors" with their RESPECTIVE values hidden behing them.
 Many of the different and same "values" can be behind the same "door", and thus be opened by the same "key", but the values are all in the same chest, which requires that one key.
 This is a good metaphor on the usage of the dictionary.
+s3a1
+Create two lists like the ones below.
+Create a loop that iterates through the lists and adds the data to a dictionary such that the output looks like :
+words = ['First', 'Second', 'Third']
+numbers = [1, 2, 3]
+
+final dictionary output - { 'First':1, 'Second':2, 'Third':3 }
+
 """
 
 
