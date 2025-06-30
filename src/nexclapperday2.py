@@ -222,8 +222,32 @@ On the whole, however, I still have access to the concepts that they were going 
 Write down the code and let you play Minecraft for the entirety of the class.
 -N1RV@n
 Dictionaries
-How to make dictionaries.          
-"""
+How to make dictionaries.
+These are some dictionaries with preexisiting values:
+data =  {"fruit": "orange", "vegetable" : "carrot", "beverage" : "apple juice"}
+data["clothes"] = "shirt"
+print(data)
+The output to this data is that the entire dictionary, along with the clothes : shirt.
 
+How to iterate through a dictionary and generate key-value pairs:
+This is an easy way to iterate through a dictionary and get the key value pairs.
+I would say that dictionaries can be very useful in things such as the megaman2 rpg edition game because a key, such as an ingame password, will only result in a set game result, because a key cannot have more than one value directly. Putting a list as the value is allowed though.
+Interestingly, a value can be put to more than one key, which would mean that the game password or weapons equipment series would not be affected by which stage you select.
+When coding a word game that only uses words and letters and inputs to run, the x_postition and y_position are merely variables, but perhaps dicitonaries can be used to determine multiple things, such as the location and weaknesses of enemies, along with the location of powerups.
+Anyway, to iterate through a dictionary and generate key-value pairs, follow this code:
+
+data =  {"fruit": "orange", "vegetable" : "carrot", "beverage" : "apple juice"}
+for i in data:
+   print("The key is" + str(i))
+#This renders the dict key into string form, similar to the int function.
+print("The value is" +  str(data[i]))
+The reason that value thingy works is because first of all, data[i] represents the value of the data for the iteration, and str just converts it back into a string, as it is currently in a dicitonary format. 
+
+"""
+data =  {"fruit": "orange", "vegetable" : "carrot", "beverage" : "apple juice"}
+for i in data:
+   print("The key is" + str(i))
+#This renders the dict key into string form, similar to the int function.
+print("The value is" +  str(data[i]))
 
 
