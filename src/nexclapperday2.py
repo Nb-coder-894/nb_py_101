@@ -209,10 +209,21 @@ month = Months[month-1]
 day = int(input("Enter the day.\n"))
 print(f"{day} {month} {year}")
 s2a8
-Create a program that loops through the list and prints out all of the items greater than 25.    
-"""
+Create a program that loops through the list and prints out all of the items greater than 25.
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-for 
+for i in a:
+    if i > 25:
+        print(i)  
+Note:
+The people revoked my access to this document.
+However, because I managed to copy and paste the entire document into google drive, I still have a copy of the origin nexclap document, for each page.
+Sadly, some of the tasks are no longer there (such as s2a9 and s2a8) because of some kind of copy and paste error.
+On the whole, however, I still have access to the concepts that they were going to teach, even though their method of teaching was to just
+Write down the code and let you play Minecraft for the entirety of the class.
+-N1RV@n
+Dictionaries
+How to make dictionaries.          
+"""
 
 
 
