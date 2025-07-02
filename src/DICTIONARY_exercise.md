@@ -191,3 +191,56 @@ print(counter)
 ---
 
 Would you like me to quiz you a bit? Or do a small mini-project using dictionaries (like a phonebook or flashcard app)?
+
+
+#### This is dictionary exercise 1, where I have to make a dicitonary of your favorite animal.
+```
+animal = {
+    "name" : "Cat",
+    "color" : "Orange",
+    "weight" : 12
+}
+```
+#### Okay, so now I have to write a program that adds a key, and value for "continent. I'm pretty sure this also includes the value."
+```
+animal["continent"] = "anywhere"
+print(animal)
+```
+#### Exercises 1 and 2 done. 
+##### Now archiving document inside of the original DICTONARY_exercise.md
+
+#Now for exercise 3: the student database.
+#### In this exercise, I had to make a dicitionary for 3 students, including their name, and a dictionary inside of a dictionary to indicate their respective data. I'm just going to copy the data, and then edit out the names, because I feel that the code and thought process is more important here than my typing speed.
+```
+students = {
+    "Joe": {"age": 12, "grade": 7, "GPA" : float(4.0)},
+    "Bob": {"age": 11, "grade": 6, "GPA" : float(1.0)},
+    "Billy": {"age": 13, "grade": 8, "GPA" : float(3.14159246343)}
+}
+```
+#### Okay, so a dictionary contains the name of the students, while a respective dicitonary for every single student containr=s more personal data about them. Now I have to try and print a student's gpa, which I invented.
+```
+print(students["Billy"]["GPA"])
+```
+#### The output is 3.14159246343.
+##### Now archiving into markdown format.
+
+#### The final task that I have to do is to make a word counter for the bonus exercise. Basically, I have to use a split function (I'll ask chatgpt about how to use it) to find the number of words. Alright, so it basically takes a string and will change the string into a bunch of broken down words in a list. useful for word counters.
+ ### Let's start on the code.
+```
+sentence = "a man eats a pineapple under the sea that was not ripe yet so he bought another one"
+words = sentence.split()
+counter = {}
+for i in words:
+    if i in counter:
+        counter[i] += 1
+    else:
+        counter[i] = 1
+
+print(counter)
+```
+#### The code result is this:
+``` 
+{'a': 2, 'man': 1, 'eats': 1, 'pineapple': 1, 'under': 1, 'the': 1, 'sea': 1, 'that': 1, 'was': 1, 'not': 1, 'ripe': 1, 'yet': 1, 'so': 1, 'he': 1, 'bought': 1, 'another': 1, 'one': 1}
+```
+##### Now archiving to md file.
