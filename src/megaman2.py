@@ -1,17 +1,30 @@
 import time
-print("Now running Megaman version 1.0.0")
-time.sleep(2.3)
-print("You are Megaman. \n You were created by Dr.Light to stop the evil intentions of Dr.Wily. \n However, after you were created, Dr.Wily created 8 Robo Masters, and sent them after you. \n You must stop them, with the aid of your Mega Buster.")
-time.sleep(3.4)
-player_data = {"Health" : 100,
-               "Weapons" : ["Mega Buster"],
-               "Stages_Cleared" : []                           
-               }
-weapon_inventory = player_data["Weapons"]
-print("Now entering stage select")
-time.sleep(0.001)
-stage_select = input("Which stage will you chose?\n Your options are Bubble Man, Metal Man, Air Man, Crash Man,\n Flash Man, Heat Man, Quick Man, and Wood Man. \n Type in the name of the Robo Master you would like to fight. \n Oh, and please note: You cannot just go and fight them. They are in 8 different areas around the world, and you must navigate their stages in order to fight them. \n ")
-stage_select = stage_select.lower()
-if stage_select == "metal man":
-    print("Now loading Metal Man stage...\n")
-    time.sleep(4.1)
+print("Now running Megaman2 RPG edition\n Version 1.0.0")
+time.sleep(1)
+print("You are megaman.\n")
+time.sleep(1)
+print("Now entering stage select.\n")
+weapon_inventory = []
+x_position = 0
+y_position = 0
+while True:
+    weapon_inventory.append("Mega_Buster")
+    stage_select = input("Which stage? Air Man, Crash Man, Heat Man, Bubble Man, Wood Man, Quick Man, Flash Man, or Metal Man?")
+    stage_select = stage_select.lower()
+    if stage_select == "metal man":
+        print("Now loading Metal Man stage...\n Get your weapons ready...")
+        time.sleep(2)
+        print("Now in the starting area of Metal Man. \nTo select your weapon, type in w. \n To move, type in m. \n To jump, press j. ")
+        for i in range (1,300):
+            move_request = input("What will you do? Move using m? Equip weapon using w? \n Jump using J?")
+            move_request = move_request.lower()
+            if move_request == "w":
+                print(f"Your selected weapon is {weapon_inventory}")
+            elif move_request == "m":
+                move_direction = input("Forward or backward? type in f or b to do that.")
+                move_direction = move_direction.lower()
+                if move_direction == "b" and x_position == 0:
+                    print("You can't do that")
+                elif move_direction == "f"    
+
+   
