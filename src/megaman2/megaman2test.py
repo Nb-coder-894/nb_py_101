@@ -1,12 +1,82 @@
 # This the test zone for the features such as save, load, run, and to add things to the player data, along with the original battle experience.
 # Now trying to test the dictionary player data add function.
-player_data = {
-    "Weapons" : ["Mega_buster"]
-}
-print("Now running player data add mode.")
-no = int(input("nonumberger1"))
-if no == 1:
-    player_data["Weapons"].append("Quick_Boomerang")
-    print(player_data["Weapons"])
+
+# player_data = {
+#     "Weapons" : ["Mega_buster"]
+# }
+# print("Now running player data add mode.")
+# no = int(input("nonumberger1"))
+# if no == 1:
+#     player_data["Weapons"].append("Quick_Boomerang")
+#     print(player_data["Weapons"])
+
 # Note to future self. When calling stuff from a dictionary, always use square brackets.
 # Alright, so to add stuff to the list, you have to basically append the called list (see line 9) outside of the dictionary calling. That's gud to know.
+# Okay, time to go to the old document to see how things run.
+# I have ported the entire code here, in order to figure out on this python document how to do the whole combat, moving, and fighting, and jumping experience. 
+# Should something go wrong here, I have the entire document unchanged on megaman2.py.
+
+import time
+print("Now running Megaman version 1.0.0")
+time.sleep(2.3)
+print("You are Megaman. \n You were created by Dr.Light to stop the evil intentions of Dr.Wily. \n However, after you were created, Dr.Wily created 8 Robo Masters, and sent them after you. \n You must stop them, with the aid of your Mega Buster.")
+time.sleep(3.4)
+player_data = {"Health" : 100,
+               "Weapons" : ["Mega Buster"],
+               "Stages_Cleared" : [],
+               "Wily_Tower_Mode" : False,
+               "x_position" : 0,
+               "y_position" : 0,
+               "battle_mode" : False
+
+               }    
+print("Now entering stage select")
+time.sleep(0.001)
+while True:
+    # Note that this while true is to be used for stage select later on
+    stage_select = input("Which stage will you chose?\n Your options are Bubble Man, Metal Man, Air Man, Crash Man,\n Flash Man, Heat Man, Quick Man, and Wood Man. \n Type in the name of the Robo Master you would like to fight. \n Oh, and please note: You cannot just go and fight them. They are in 8 different areas around the world, and you must navigate their stages in order to fight them. \n ")
+    stage_select = stage_select.lower()
+    if stage_select == "flash man":
+        print("Now loading Flash Man stage...\n")
+        time.sleep(4.1)
+        print("You are now in Flash Man's stage.")
+        print("You are currently in an area with slick stones.")
+        time.sleep(2)
+        while True:
+            # Note that this while true is for the action request when not currently in a battle
+            action_request = input("What would you like to do? Jump using j? Move using m?\nEquip weapon using w? ")
+            action_request = action_request.lower()
+            if action_request == "m":
+                while True:
+                    # Note that this while true is for the move request direction checker    
+                    move_direction = input("Okay, forward or backward?\n You can type in f for forward and b for backward.")
+                    move_direction = move_direction.lower()
+                    if move_direction == "f":
+                        player_data["x_position"] += 1
+                        print("Okay. You moved forward.")
+                        break
+                    elif move_direction == "b":
+                        print("Loading...")
+                        if player_data["x_position"] - 1 < 0:
+                            print("You cannot go back from here.")
+                        else:
+                            print("Okay. You moved backward.")
+                            player_data["x_position"] -= 1
+                    else:
+                        print("ERROR\nCOMMAND NOT UNDERSTOOD\n PLS TRY AGAIN")        
+            elif action_request == "w":
+                print("Your available weapons are:\n" + str(player_data["Weapons"]))
+            elif action_request == "j":
+                print("Developer's note:\n the jump function in this game will make you jump one space higher and one space forward at the same time.\n However, you won't stay in the air, so you will end up falling back to where you were. \n This is why your altitude will not change regardless of whether you jump or not.\n")
+                print("You jumped, and were unable to stay in the air.\n Thus, you fell back down, but managed to move forward.")    
+                player_data["x_position"] += 1
+            else:
+                print("ERROR\n COMMAND NOT UNDERSTOOD\n PLS TRY AGAIN")
+            if player_data["x_position"] == 5:
+            player_data["battle_mode"] == True
+            if player_data["battle_mode"] == True:
+            print("An enemy approaches!")
+            time.sleep(3.32123123311313131321)
+            print("You are now fighting a ChuckBot.\n What will you do? Attack using w? Or try to run using r?")                    
+
+
