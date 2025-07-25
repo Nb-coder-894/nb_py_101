@@ -101,6 +101,7 @@ player_data = {"Health" : 100,
                "Bubble_Man" : False,
                "Quick_Man" : False,
                "Crash_Man" : False,
+               "Adventure_Mode" : False,
                
 
                }
@@ -113,6 +114,7 @@ def check_stage_select(pseudo_stage_select):
         stage_select = stage_select.lower()         
         if stage_select == "flash man":
             pseudo_stage_select["Flash_Man"] = True
+            pseudo_stage_select["Stage_Select"] = False
         else:
             print("COMMAND NOT UNDERSTOOD.\n PLEASE TRY AGAIN")
             stage_select = input("Which stage will you choose?\n Your options are Bubble Man, Metal Man, Air Man, Crash Man,\n Flash Man, Heat Man, Quick Man, and Wood Man. \n Type in the name of the Robo Master you would like to fight. \n ")
@@ -122,6 +124,17 @@ def check_all_levels(psuedo_level):
     if psuedo_level["Flash_Man"] == True:
         print("Now loading Flash Man Stage...\n")
         time.sleep(0.1)
+        psuedo_level["Adventure_Mode"] = True
 check_all_levels(player_data)        
-               
+def zone_check(psuedo_zone_checker):
+    if psuedo_zone_checker["Flash_Man"] == True and psuedo_zone_checker["Adventure_Mode"] == True:
+        print( "=" * 100 ,  "\nLoad Complete.\n")
+        time.sleep(0.15)
+    else:
+        print("ERROR 400")
+        time.sleep(1.2)
+        
+        print("Now redirecting into stage select...")
+        check_stage_select(player_data)    
+zone_check(player_data)                       
 
