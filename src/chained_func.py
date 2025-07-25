@@ -23,8 +23,11 @@ def main(odd_or_even):
             print(n)
             n = int(n)
             for i in range(1,n):
+                # Note: For each of the terms, 2,4,6,8,all the way to 50.
+                # The program can correctly identify the number of terms for an even sequence of numbers going from that number until 100.
+                # However, it cannot make the arithmetic progression so far. 
                 arithmetic_progression = [2]
-                arithmetic_progression.append(2+number)
+                arithmetic_progression.
             print(arithmetic_progression)    
         soemthing(number)
            
