@@ -102,6 +102,8 @@ player_data = {"Health" : 100,
                "Quick_Man" : False,
                "Crash_Man" : False,
                "Adventure_Mode" : False,
+               "x_pos" : None,
+               "y_pos" : None
                
 
                }
@@ -130,6 +132,29 @@ def zone_check(psuedo_zone_checker):
     if psuedo_zone_checker["Flash_Man"] == True and psuedo_zone_checker["Adventure_Mode"] == True:
         print( "=" * 100 ,  "\nLoad Complete.\n")
         time.sleep(0.15)
+        print("Now in Flash Man beginning stage.\n")
+        while psuedo_zone_checker["Flash_Man"] == True:
+            move_select = input("What will you do? Move using m? Jump using j? or check weapon using w?").lower()
+            if move_select == "m":
+                move_select_directional_pos = input("Okay, forward or backward? You can use f or b to explain that.").lower()
+                if move_select_directional_pos == "f":
+                    print("Okay. You choose to move forward.")
+                    psuedo_zone_checker["x_pos"] += 1
+                if move_select_directional_pos == "b":
+                    while True:
+                        if psuedo_zone_checker["x_pos"] == 0:
+                            print(" You can't go back from here.\n This is the starting area.")
+                            move_select_directional_pos = "f"
+                                
+
+            
+            elif move_select == "w":
+                print(psuedo_zone_checker["Weapons"])
+            elif move_select == "j":
+                print("Okay, you choose to jump. You moved forward.")    
+
+        
+                
     else:
         print("ERROR 400")
         time.sleep(1.2)
