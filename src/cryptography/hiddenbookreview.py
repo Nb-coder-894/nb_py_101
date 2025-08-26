@@ -9,7 +9,7 @@ encrypted_report = b"gAAAAABoa0ZDpfE6ggLMDW19gGNWFG7OgXvJXGpNpO1-3ieE6ScRgNw20u8
 
 def main():
     password = float(input("Enter password: "))
-    if password % 7 == 0 and password % 21 == 0 and password % 3 == 0:
+    if password = 
         # Decrypt and print
         decrypted = cipher.decrypt(encrypted_report).decode()
         print(decrypted)
