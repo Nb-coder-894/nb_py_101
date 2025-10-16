@@ -94,6 +94,7 @@ player_data = {"Health" : 100,
                "Stages_Cleared" : [],
                "Wily_Tower_Mode" : False,
                "Battle_Mode" : False,
+               "Boss_Battle_Mode" : False, 
                "Stage_Select" : True,
                "Flash_Man" : False,
                "Metal_Man" : False,
@@ -102,10 +103,8 @@ player_data = {"Health" : 100,
                "Quick_Man" : False,
                "Crash_Man" : False,
                "Adventure_Mode" : False,
-               "x_pos" : None,
-               "y_pos" : None
-               
-
+               "x_pos" : 0,
+               "y_pos" : 0,
                }
 
 def check_stage_select(pseudo_stage_select):
@@ -120,7 +119,8 @@ def check_stage_select(pseudo_stage_select):
         else:
             print("COMMAND NOT UNDERSTOOD.\n PLEASE TRY AGAIN")
             stage_select = input("Which stage will you choose?\n Your options are Bubble Man, Metal Man, Air Man, Crash Man,\n Flash Man, Heat Man, Quick Man, and Wood Man. \n Type in the name of the Robo Master you would like to fight. \n ")
-            stage_select = stage_select.lower()    
+            stage_select = stage_select.lower()
+            pass    
 check_stage_select(player_data)
 def check_all_levels(psuedo_level):
     if psuedo_level["Flash_Man"] == True:
@@ -139,27 +139,33 @@ def zone_check(psuedo_zone_checker):
                 move_select_directional_pos = input("Okay, forward or backward? You can use f or b to explain that.").lower()
                 if move_select_directional_pos == "f":
                     print("Okay. You choose to move forward.")
+                    print(f"TESTING \n Your x_pos is {psuedo_zone_checker["x_pos"]})
                     psuedo_zone_checker["x_pos"] += 1
                 if move_select_directional_pos == "b":
                     while True:
                         if psuedo_zone_checker["x_pos"] == 0:
                             print(" You can't go back from here.\n This is the starting area.")
-                            move_select_directional_pos = "f"
-                                
-
-            
+                            
             elif move_select == "w":
-                print(psuedo_zone_checker["Weapons"])
+                print("You have" + psuedo_zone_checker["Weapons"])
             elif move_select == "j":
-                print("Okay, you choose to jump. You moved forward.")    
-
-        
-                
+                print("Okay, you choose to jump. You moved forward.")                
     else:
         print("ERROR 400")
         time.sleep(1.2)
         
         print("Now redirecting into stage select...")
         check_stage_select(player_data)    
-zone_check(player_data)                       
+zone_check(player_data)
+def location_checker(location_checker):
+    while True:
+        if location_checker["x_pos"] == 5:
+            location_checker["Battle_Mode"] = True
+            print("!" * 100)
+            print("!" * 100)
+            print("!" * 100)
+            print("!" * 100)
+            print("An enemy approches. You are now fighting a ChuckBot.")
+
+                               
 
