@@ -122,7 +122,7 @@ def check_stage_select(pseudo_stage_select):
             print("COMMAND NOT UNDERSTOOD.\n PLEASE TRY AGAIN")
             stage_select = input("Which stage will you choose?\n Your options are Bubble Man, Metal Man, Air Man, Crash Man,\n Flash Man, Heat Man, Quick Man, and Wood Man. \n Type in the name of the Robo Master you would like to fight. \n ")
             stage_select = stage_select.lower()
-            pass    
+            pass   
 check_stage_select(player_data)
 def check_all_levels(psuedo_level):
     if psuedo_level["Flash_Man"] == True:
