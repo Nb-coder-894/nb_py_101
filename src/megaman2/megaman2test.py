@@ -104,7 +104,9 @@ player_data = {"Health" : 100,
                "Crash_Man" : False,
                "Adventure_Mode" : False,
                "x_pos" : 0,
-               "y_pos" : 0,
+               "y_pos" : 0
+               
+
                }
 
 def check_stage_select(pseudo_stage_select):
