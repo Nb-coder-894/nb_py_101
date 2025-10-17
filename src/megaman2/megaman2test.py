@@ -102,8 +102,8 @@ player_data = {"Health" : 100,
                "Quick_Man" : False,
                "Crash_Man" : False,
                "Adventure_Mode" : False,
-               "x_pos" : None,
-               "y_pos" : None
+               "x_pos" : 0,
+               "y_pos" : 0
                
 
                }
