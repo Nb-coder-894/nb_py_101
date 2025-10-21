@@ -1,4 +1,4 @@
-import sleep
+import time 
 helth = 100
 
 def battle_mode(fightsim):
@@ -10,5 +10,5 @@ def battle_mode(fightsim):
             print("you punched ChuckBOt.")
             ChuckBot_hp -= 20
         elif player_move == "r":
-            break
+            print("Got away safely.")
             
