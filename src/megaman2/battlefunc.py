@@ -1,5 +1,5 @@
 import time 
-helth = 100
+health = 100
 
 def battle_mode(fightsim):
     while True:
