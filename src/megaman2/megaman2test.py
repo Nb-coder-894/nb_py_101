@@ -141,8 +141,9 @@ def zone_check(psuedo_zone_checker):
                 move_select_directional_pos = input("Okay, forward or backward? You can use f or b to explain that.").lower()
                 if move_select_directional_pos == "f":
                     print("Okay. You choose to move forward.")
-                    print(f"TESTING \n Your x_pos is {psuedo_zone_checker["x_pos"]})
-                    psuedo_zone_checker["x_pos"] += 1
+                    psuedo_zone_checker[player_data["x_pos"]] += 1
+                    print(f"TESTING \n Your x_pos is {psuedo_zone_checker["x_pos"]}")
+                    
                 if move_select_directional_pos == "b":
                     while True:
                         if psuedo_zone_checker["x_pos"] == 0:
