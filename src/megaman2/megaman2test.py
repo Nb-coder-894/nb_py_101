@@ -85,6 +85,7 @@
 #...that this version was made for. Time to make a version from the original megaman2.py using functions.
 import time
 import random
+from collections import defaultdict 
 print("Now running Megaman version 1.0.0")
 time.sleep(2.3)
 print("You are Megaman. \n You were created by Dr.Light to stop the evil intentions of Dr.Wily. \n However, after you were created, Dr.Wily created 8 Robo Masters, and sent them after you. \n You must stop them, with the aid of your Mega Buster.\n To stop them, you must travel to 8 diferent areas around the world,\n and you must navigate their stages in order to fight them. \n ")
@@ -103,8 +104,8 @@ player_data = {"Health" : 100,
                "Quick_Man" : False,
                "Crash_Man" : False,
                "Adventure_Mode" : False,
-               "x_pos" : 0,
-               "y_pos" : 0
+               "x_pos" : int(0),
+               "y_pos" : int(0)
                
 
                }
@@ -148,9 +149,10 @@ def zone_check(psuedo_zone_checker):
                     while True:
                         if psuedo_zone_checker["x_pos"] == 0:
                             print(" You can't go back from here.\n This is the starting area.")
-                            
+                            continue
+                        else: psuedo_zone_checker["x_pos"]-= 1
             elif move_select == "w":
-                print("You have" + psuedo_zone_checker["Weapons"])
+                print(f"You have" + psuedo_zone_checker["Weapons"])
             elif move_select == "j":
                 print("Okay, you choose to jump. You moved forward.")                
     else:
@@ -169,6 +171,67 @@ def location_checker(location_checker):
             print("!" * 100)
             print("!" * 100)
             print("An enemy approches. You are now fighting a ChuckBot.")
+            import time
+            import random
+            print("Now running battle_template version 1.0.0....")
+            time.sleep(2)
+            print("Please standby:")
+            time.sleep(2)
+            enemy_dict = ["coolguy", "ChuckBot"]
+            print(f"You are now battling the enemy")
+            while True:
+                Enemy_HP = 300
+                Player_HP = 500
+                if Enemy_HP > 0 and Player_HP > 0:
+                    print("The battle ensues...")
+                    Enemy_attack = random.randint(100,200)
+                    print(f"The enemy damaged you with \n {Enemy_attack} damage!")
+                    player_command = input("what will you do? \n type i for info about what you can do.").lower()
+                    Player_HP -= Enemy_HP
+                    if player_command == "i":
+                        print("Attack with typing in a, heal slightly with h, \n defend with d, \n and run away with r. \n You will get hurt if you run away, though. ")
+                        time.sleep(4)
+                        continue
+                    elif player_command == "a":
+                        player_attack = random.randint(0,100)
+                        print(f"You attacked the enemy! You dealt {player_attack} damage.")
+                    elif player_command == "r":
+                        Player_HP /= 2 * random.randint (0,500)
+                        print("You shouldn't have run away.\n")
+                        time.sleep(4)
+                        print("Don't give up.")
+                        break
+                    elif player_command == "d":
+                        Enemy_attack *= (1/random.randint(1,4))  
+                        print(f"You defended. Damage reduced by {Enemy_attack}") 
+                        time.sleep(4)
+                    elif player_command == "h":
+                        Player_heal = random.randint(0,200)
+                        Player_HP += Player_heal
+                        print(f"Your health is now {Player_HP}[this is a test] \n Also you recovered {Player_heal} Health.")
+                    else:
+                        print("command not understood")
+                        continue 
+
+
+
+
+            #Note: This is the basic version that does nto have any redirecting.
+            # That is why the healthbar for the player is higher than normal
+            # In reality, a bunch of functions will be used to redirect the user.                                           
+
+
+
+                if Enemy_HP <= 0:
+                    print("You win")
+                    break
+                elif Player_HP <= 0:
+                    print("Ded")
+                    break
+    
+
+
+
 
                                
 
